@@ -4,4 +4,4 @@
 - user, admin, owner 3개의 등급으로 분류됩니다.
 - owner는 회원 삭제가 가능한 최고 등급입니다.
 
-- JAVA, Spring Framework, Spring Boot, JPA, JPQL, Thymeleaf, JavaScript를 사용했습니다.
+- Java, Spring Framework, Spring Boot, JPA, JPQL, Thymeleaf, JavaScript를 사용했습니다.
