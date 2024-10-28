@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+    <div class="table table-striped">
+        <div th:replace="fragments/bodyHeader :: bodyHeader" />
+        <div>
+            <div>
+                <form th:object="${memberSearch}" class="form-inline">
+                    <div class="form-group mb-2">
+                        <input type="text" th:field="*{memberSearch}" class="form-control" placeholder="아이디 또는 이름"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">검색</button>
+                </form>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>아이디</th>
+                    <th>이름</th>
+                    <th>등급</th>
+                    <th>가입날짜</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="member : ${memberList}">
+                    <td th:text="${member.userId}"></td>
+                    <td th:text="${member.memberName}"></td>
+                    <td th:text="${member.memberStatus}"></td>
+                    <td th:text="${member.joinTime}"></td>
+                    <td>
+                        <a th:if="${member.userId == loginMemberInfo.userId}" href="#"
+                           th:href="${isSns == true} ?
+                                    @{/list/edit/{memberId} (memberId=${member.id})} :
+                                    @{/list/editSns/{memberId} (memberId=${member.id})}"
+                           class="btn btn-primary" role="button">수정</a>
+                        <form th:if="${loginMemberInfo.memberStatus == T(login.contents.domain.MemberStatus).OWNER} and ${member.userId != loginMemberInfo.userId}"
+                              th:action="@{/list/delete/{memberId}(memberId=${member.id})}" method="post"
+                              style="display: inline-block;"
+                              onsubmit="return confirm('정말 삭제하시겠습니까?');">
+                            <button type="submit" class="btn btn-danger">삭제</button>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div th:replace="fragments/footer :: footer" />
+    </div>
+</body>
+</html>

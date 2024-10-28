@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/springsecurity6">
+<div class="header" th:fragment="bodyHeader">
+    <ul class="nav nav-pills pull-right">
+        <li><a href="/">Home</a></li>
+    </ul>
+
+    <form th:action="@{/logout}" method="post" sec:authorize="isAuthenticated()">
+        <button style="text-align: right; width: 100%; color: red;" type="submit" class="btn">로그아웃</button>
+    </form>
+</div>
