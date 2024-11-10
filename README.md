@@ -5,3 +5,4 @@
 - owner는 회원 삭제가 가능한 최고 등급입니다.
 
 - Java, Spring Framework, Spring Boot, JPA, JPQL, Thymeleaf, JavaScript를 사용했습니다.
+- H2 Database를 사용했습니다.
