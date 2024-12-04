@@ -26,7 +26,7 @@
 - 비밀번호가 일치 하지 않을 시 팝업창이 출력 됩니다.
 
 ![image](https://github.com/user-attachments/assets/2d2dc25a-cbbc-4462-8a45-cd2ddff09a22)
-- 비밀번호 미입력 시 출력 됩니다.
+- 비밀번호 미입력 및 8자 이상이 아니면 출력 됩니다.
 
 # 회원목록
 ![admin 회원목록](https://github.com/user-attachments/assets/7246082b-3f8c-422f-98bf-b7ac50abaeb6)
