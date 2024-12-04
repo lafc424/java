@@ -1,8 +1,8 @@
 # 포트폴리오 설명
 - 회원가입, 로그인, 로그아웃, 회원수정, 회원목록 검색이 가능한 페이지 입니다.
 - 초기 멤버 user, admin, owner 3개가 생성됩니다.
-- user, admin, owner 3개의 등급으로 분류됩니다.
    - 초기 비밀번호는 123123123 입니다.
+- user, admin, owner 3개의 등급으로 분류됩니다.
 - owner는 회원 삭제가 가능한 최고 등급입니다.
 - Java, Spring Framework, Spring Boot, JPA, JPQL, Thymeleaf, JavaScript, H2 Database를 사용했습니다.
 
