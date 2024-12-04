@@ -8,7 +8,7 @@
 
 # 메인 화면
 ![image](https://github.com/user-attachments/assets/4a09f339-9847-4afd-add4-f4f577c236a4)
-초기 메인 화면 입니다.
+- 초기 메인 화면 입니다.
 
 # 로그인 화면 
 ![로그인화면](https://github.com/user-attachments/assets/17524ac5-9896-453e-b8d9-c82e71d1d896)
