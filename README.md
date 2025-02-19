@@ -9,7 +9,7 @@
 # 부가 설명
 - Google로그인에 필요한 OAuth2LoginService 구현
 - @Enumerated을 사용하여 emum 타입 매핑
-- 회원가입 및 수정 시 @Transactional 사용
+- 회원가입 및 수정, 삭제 시 @Transactional 사용
   
   ![image](https://github.com/user-attachments/assets/17f65420-5b34-4429-8cd3-0843d0ec4455)
 
