@@ -1,10 +1,21 @@
 # 포트폴리오 설명
-- 회원가입, 로그인, 로그아웃, 회원수정, 회원목록 검색이 가능한 페이지 입니다.
+- 회원가입, 로그인,SNS(Google) 로그인, 로그아웃, 회원수정, 회원목록 검색이 가능한 페이지 입니다.
 - 초기 멤버 user, admin, owner 3개가 생성됩니다.
    - 초기 비밀번호는 123123123 입니다.
 - user, admin, owner 3개의 등급으로 분류됩니다.
 - owner는 회원 삭제가 가능한 최고 등급입니다.
 - Java, Spring Framework, Spring Boot, JPA, JPQL, Thymeleaf, JavaScript, H2 Database를 사용했습니다.
+
+# 부가 설명
+- Google로그인에 필요한 OAuth2LoginService 구현
+- @Enumerated을 사용하여 emum 타입 매핑
+- 회원가입 및 수정 시 @Transactional 사용
+   -> ![image](https://github.com/user-attachments/assets/17f65420-5b34-4429-8cd3-0843d0ec4455)
+
+- util폴더에 passwordCreate코드 및 passwordValidate코드 구현
+  -> ![image](https://github.com/user-attachments/assets/cbdf3760-71f0-48e0-9687-c013da15b188)
+  -> 비밀번호를 임시로 발행 또는 SNS 로그인 시 password insert 하기 위해서 구현
+  -> 회원가입, 로그인 및 비밀번호 변경 시 패스워드가 유효한지 여러곳에서 사용하기 때문에 util폴더에 따로 구현
 
 # 메인 화면
 ![image](https://github.com/user-attachments/assets/4a09f339-9847-4afd-add4-f4f577c236a4)
