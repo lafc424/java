@@ -14,10 +14,10 @@
  ![image](https://github.com/user-attachments/assets/17f65420-5b34-4429-8cd3-0843d0ec4455)
 
 - util폴더에 passwordCreate코드 및 passwordValidate코드 구현
-- 
+ 
   ![image](https://github.com/user-attachments/assets/cbdf3760-71f0-48e0-9687-c013da15b188)
-- 비밀번호를 임시로 발행 또는 SNS 로그인 시 password insert 하기 위해서 구현
-- 회원가입, 로그인 및 비밀번호 변경 시 패스워드가 유효한지 여러곳에서 사용하기 때문에 util폴더에 따로 구현
+   - 비밀번호를 임시로 발행 또는 SNS 로그인 시 password insert 하기 위해서 구현
+   - 회원가입, 로그인 및 비밀번호 변경 시 패스워드가 유효한지 여러곳에서 사용하기 때문에 util폴더에 따로 구현
 
 # 메인 화면
 ![image](https://github.com/user-attachments/assets/4a09f339-9847-4afd-add4-f4f577c236a4)
