@@ -11,7 +11,7 @@
 - @Enumerated을 사용하여 emum 타입 매핑
 - 회원가입 및 수정 시 @Transactional 사용
   
- ![image](https://github.com/user-attachments/assets/17f65420-5b34-4429-8cd3-0843d0ec4455)
+  ![image](https://github.com/user-attachments/assets/17f65420-5b34-4429-8cd3-0843d0ec4455)
 
 - util폴더에 passwordCreate코드 및 passwordValidate코드 구현
  
